@@ -1,0 +1,22 @@
+<footer class="row bg-dark py-3 g-0">
+    <button class="col" (click)="onClick(1)" [ngClass]="{'active': activeIndex === 1}">
+        <fa-icon [icon]="faBox" size="2x"></fa-icon>
+        <span class="d-block">Catalog</span>
+    </button>
+    <button class="col" (click)="onClick(2)" [ngClass]="{'active': activeIndex === 2}">
+        <fa-icon [icon]="faSignature" size="2x"></fa-icon>
+        <span class="d-block">Proposals</span>
+    </button>
+    <button class="col" (click)="onClick(3)" [ngClass]="{'active': activeIndex === 3}">
+        <fa-icon [icon]="faUsers" size="2x"></fa-icon>
+        <span class="d-block">People</span>
+    </button>
+    <button class="col" (click)="onClick(4)" [ngClass]="{'active': activeIndex === 4}">
+        <fa-icon [icon]="fadollarSign" size="2x"></fa-icon>
+        <span class="d-block">Payments</span>
+    </button>
+    <button class="col" (click)="onClick(5)" [ngClass]="{'active': activeIndex === 5}">
+        <fa-icon [icon]="faEllipsis" size="2x"></fa-icon>
+        <span class="d-block">More</span>
+    </button>
+</footer>
